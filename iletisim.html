@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html">LOGO</a>
+            </div>
+           <ul>
+                <li><a href="index.html"  >Hakkımda</a></li>
+                <li><a href="ozgecmis.html" >Özgeçmiş</a></li>
+                <li><a href="sehrim.html">Şehrim</a></li>
+                <li><a href="takimimiz.html">Takımımız</a></li>
+                <li><a href="ilgi.html">İlgi alanlarım</a></li>
+                <li><a href="login.html">Giriş Yap</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+           </ul>
+        </nav>
+        <form action="" method="post">
+            <label for="isim">Adınız:</label> 
+            <input type="text" name="isim" placeholder="Adınız..."> <br><br>
+
+            <label for="soyisim">Soyadınız:</label> 
+            <input type="text" name="soyisim" placeholder="Soyadınız..."><br><br>
+
+            <label for="email">E-mail adresiniz</label>
+            <input type="email" name="email" id="" placeholder="nart@examples.com"><br><br>
+
+            <label for="gender">Cinsiyetiniz:</label>
+            <input type="radio" name="gender" id="erkek"> Erkek
+            <input type="radio" name="gender" id="kadin"> Kadın <br><br>
+
+            <label for="sehir">Şehriniz:</label>
+            <select name="sehir" id="">
+                <option value="">Lütfen şehir seçiniz</option>
+                <option value="Kayseri">Kayseri</option>
+                <option value="İstanbul">İstanbul</option>
+                <option value="İzmir">İzmir</option>
+                <option value="Ankara">Ankara</option>
+            </select>
+                <br><br>
+            <label for="borntime">Doğum Tarihiniz:</label>
+            <input type="datetime" name="borntime" id="" placeholder="gün/ay/yıl">
+                <br><br>
+            <input type="button" value="Gönder" id="buton">
+        </form>
+</body>
+</html>

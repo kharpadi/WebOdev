@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:sans-serif ;
+    letter-spacing: 1px;
 }
 
 .container{
@@ -10,12 +11,16 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
+    
 }
 /*Hakkımızda kısmı*/
 .container nav{
     width: 100%;
     height: 80px;
-    background-color:rgba(22, 114, 221, 0.4) ;
+    background-color:rgba(22, 114, 215, 0.4) ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 nav .logo{
     display: inline-block;
@@ -44,25 +49,27 @@ nav ul li{
     display: inline-block;
     margin: 0 8px;
     line-height: 80px;
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    padding: 6px 13px;
+    font-size: 15px;
+    padding: 6px 15px;
     font-family: 'Oxygen', sans-serif;
     transition: 0.7s;
+    
 }
 nav ul li a:hover{
     color: white;
-    
     background-color: orange;
     border-radius: 7px;
+    font-size: 20px;
 }
 nav ul li a.active{
     color: white;
-    
+    font-size: 20px;
     background-color: orange;
     border-radius: 7px;
 }
@@ -107,8 +114,7 @@ nav ul li a.active{
 
 /*Ozgecmis*/
 .container header{
-    width: 100%;
-    border: 1px solid red;
+    width: 100%;   
     height: 150px;
     
     margin-top: 15px;
@@ -124,7 +130,138 @@ nav ul li a.active{
 }
 .container main .cv{
     background-color: rgba(255, 255, 255,0.8);
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
-    padding: 10px;
+    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);   
     margin-top: 10px;
+    width: 100%;
+}
+
+/*Takimimiz*/
+
+.container .tarihce{
+    background-color: rgba(255, 255, 255,0.8);
+    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+    width: auto;
+    height: auto;
+    margin: 10px 20px;
+    padding: 0px 10px;
+    padding-bottom: 25px;
+}
+
+.container .tarihce p{
+    word-spacing: 3px;
+}
+
+.container .tarihce strong{
+    text-align: center;
+    font-size: 25px;
+}
+
+/*İletisim*/
+
+.container form{
+    background-color: rgba(255, 255, 255,0.8);
+    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+    width: 30;
+    height: auto;
+    margin: 10px 20%;
+    padding: 0px 10px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-left: 20%;
+    
+}
+
+.container #buton{
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    width: 90px;
+    height: 35px;
+    border-radius: 15px;
+}
+.container input+label+select>option{
+    height: 20px;
+}
+
+/*sehrim*/
+.sayfa{
+    width: 500px;
+    margin: 0 auto;
+}
+.sliderKonum{
+position: relative;
+width: 500px;
+height: 400px;
+
+}
+
+/*slider*/
+
+.slider{
+    position: relative;
+    width: 500px;
+    height: 320px;
+    margin: 2% 30%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slider-content{
+    position: absolute;
+    width: 500%;
+    left: 0;
+    animation: slide 15s infinite;
+}
+
+.slider-content:hover{
+    animation-play-state: paused;
+}
+
+.slider-item{
+    width: 20%;
+    float: left;
+}
+
+.slider-item img{
+    width: 500px;
+    height: 320px;
+    
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(0px);
+    }
+    10% {
+        transform: translateX(-500px);
+    }
+    20% {
+        transform: translateX(-500px);
+    }
+    30% {
+        transform: translateX(-1000px);
+    }
+    40% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(-1500px);
+    }
+    60% {
+        transform: translateX(-1500px);
+    }
+    70% {
+        transform: translateX(-2000px);
+    }
+    80% {
+        transform: translateX(-2000px);
+    }
+    90% {
+        transform: translateX(0px);
+    }
+}
+
+.container .kayserihakkinda{
+    background-color: rgba(255, 255, 255,0.8);
+    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
 }
