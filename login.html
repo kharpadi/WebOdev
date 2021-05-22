@@ -27,15 +27,22 @@
                 <li><a href="iletisim.html">İletişim</a></li>
            </ul>
         </nav>
-        <form action="" method="post">
-            <label for="kullaniciadi">Kullanıcı Adı:</label>
-            <input type="email" name="kullaniciadi" id=""><br><br>
-
-            <label for="sifre">Şifre:</label>
-            <input type="password" name="sifre" id=""><br><br>
-
-            <input type="button" value="Gönder">
+        <form action="login.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="kullaniciadi">Kullanıcı Adı:</label></td>
+                    <td><input type="email" name="kullaniciadi" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="sifre">Şifre:</label></td>
+                    <td><input type="password" name="sifre" id=""></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Giriş Yap" id="buton">
+                    </td>
+                </tr>
+            </table>           
         </form>
-
 </body>
 </html>

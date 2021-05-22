@@ -27,33 +27,62 @@
                 <li><a href="iletisim.html" class="active">İletişim</a></li>
            </ul>
         </nav>
-        <form action="" method="post">
-            <label for="isim">Adınız:</label> 
-            <input type="text" name="isim" placeholder="Adınız..."> <br><br>
 
-            <label for="soyisim">Soyadınız:</label> 
-            <input type="text" name="soyisim" placeholder="Soyadınız..."><br><br>
+        
 
-            <label for="email">E-mail adresiniz</label>
-            <input type="email" name="email" id="" placeholder="nart@examples.com"><br><br>
-
-            <label for="gender">Cinsiyetiniz:</label>
-            <input type="radio" name="gender" id="erkek"> Erkek
-            <input type="radio" name="gender" id="kadin"> Kadın <br><br>
-
-            <label for="sehir">Şehriniz:</label>
-            <select name="sehir" id="">
-                <option value="">Lütfen şehir seçiniz</option>
-                <option value="Kayseri">Kayseri</option>
-                <option value="İstanbul">İstanbul</option>
-                <option value="İzmir">İzmir</option>
-                <option value="Ankara">Ankara</option>
-            </select>
-                <br><br>
-            <label for="borntime">Doğum Tarihiniz:</label>
-            <input type="datetime" name="borntime" id="" placeholder="gün/ay/yıl">
-                <br><br>
-            <input type="button" value="Gönder" id="buton">
+        <form action="" method="post" id="myform">
+            <table>
+                <tr>
+                    <td><label for="isim">Adınız:</label></td>
+                    <td><input type="text" name="isim" placeholder="Adınız..." required></td>
+                </tr>
+                <tr>
+                    <td><label for="soyisim">Soyadınız:</label></td>
+                    <td><input type="text" name="soyisim" placeholder="Soyadınız..." required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail adresiniz</label> </td>
+                    <td> <input type="email" name="email" id="" placeholder="nart@examples.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Cinsiyetiniz:</label></td>
+                    <td><input type="radio" name="gender" id="erkek"> Erkek <input type="radio" name="gender" id="kadin"> Kadın</td>
+                </tr>
+                <tr>                  
+                    <td><label for="sehir">Şehriniz:</label></td>
+                    <td><select name="sehir" id="" required>
+                        <option value="">Lütfen şehir seçiniz</option>
+                        <option value="Kayseri">Kayseri</option>
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="İzmir">İzmir</option>
+                        <option value="Ankara">Ankara</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="borntime">Doğum Tarihiniz:</label></td>
+                    <td><input type="datetime-local" name="borntime" id="" placeholder="gün/ay/yıl" required></td>
+                </tr>
+                <tr>
+                    <td><textarea name="mesaj" id="" cols="30" rows="10" placeholder="Mesajınızı giriniz..." required></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Gönder" id="buton"></td>
+                    <td><input type="button" value="Temizle" id="buton"></td>
+                </tr>
+            </table>
         </form>
+
+        <script>
+            function control(formId){
+             let invalids= document.getElementById(formId).querySelectorAll(':invalid').length;
+             console.log(invalids);
+                if (invalids !=0) {
+                    alert("Boş alan bırakılamaz")
+                }
+            }
+            control('myform');
+        </script>
+
 </body>
 </html>
