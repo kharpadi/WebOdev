@@ -1,271 +1,328 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:sans-serif ;
-    letter-spacing: 1px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
-.container{
-    background: url(resimler/arkaplan.jpg);
-    height: 100vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
-    
+.container {
+  background: url(resimler/arkaplan.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: static;
 }
 /*Hakkımızda kısmı*/
-.container nav{
-    width: 100%;
-    height: 80px;
-    background-color:rgba(22, 114, 215, 0.4) ;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-nav .logo{
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-nav .logo img{
-    width: 300px;
-    height: 160px;
-    
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
+.container nav {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(22, 114, 215, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-nav .logo a{
-    text-decoration: none;
-    font-size: 30px;
-    font-family:sans-serif ;
-    color: #f3f3f3
+nav ul {
+  text-align: center;
 }
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 8px;
-    line-height: 80px;
-    
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    padding: 6px 15px;
-    font-family: 'Oxygen', sans-serif;
-    transition: 0.7s;
-    
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 6px 15px;
+  font-family: "Oxygen", sans-serif;
+  transition: 0.7s;
 }
-nav ul li a:hover{
-    color: white;
-    background-color: orange;
-    border-radius: 7px;
-    font-size: 20px;
+nav ul li a:hover {
+  color: white;
+  background-color: orange;
+  border-radius: 7px;
+  font-size: 20px;
 }
-nav ul li a.active{
-    color: white;
-    font-size: 20px;
-    background-color: orange;
-    border-radius: 7px;
+nav ul li a.active {
+  color: white;
+  font-size: 20px;
+  background-color: orange;
+  border-radius: 7px;
 }
-.container #hobiler{
-    width: 75%;
-    height: auto;
-    float: left;
+.container #hobiler {
+  width: 75%;
+  height: auto;
+  float: left;
 }
- .container #hobiler .hobi{
-    width: 42%;
-    height: 200px;
-    float: left;
-    margin: 25px;
-    background-color: rgba(255, 255, 255,0.6);
-    
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
-    transition: 0.7s;
-}
-.container #hobiler .hobi:hover{
-    width:48% ;
-}
-.container #hobiler .hobi img{
-    width: 45%;
-    height: auto;
+.container #hobiler .hobi {
+  width: 42%;
+  height: auto;
+  float: left;
+  margin: 10px 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+  transition: 0.7s;
 }
 
-.container #hakkimda{
-    width: 22%;
-    height: 300px;
-    background-color: rgba(255, 255, 255,0.6);
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
-    float: right;
-    margin-right: 35px;
-    margin-top: 28px;
-    transition: 0.7s;
-    
-}
-.container #hakkimda:hover{
-    height: 350px;
+.container #hobiler .hobi img {
+  width: 45%;
+  height: auto;
+  float: left;
 }
 
+.container #hakkimda {
+  width: 22%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+  float: right;
+  margin-right: 35px;
+  margin-top: 28px;
+  transition: 0.7s;
+}
 
 /*Ozgecmis*/
-.container header{
-    width: 100%;   
-    height: 150px;
-    
-    margin-top: 15px;
-    background-color: rgba(255, 255, 255,0.6);
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+.container header {
+  width: 100%;
+  height: 150px;
+
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
 }
 
-.container header .giris{
-    width: 30%;
-    float: left;
-    margin-top: 30px;
-    text-align: center;
+.container header .giris {
+  width: 30%;
+  float: left;
+  margin-top: 30px;
+  text-align: center;
 }
-.container main .cv{
-    background-color: rgba(255, 255, 255,0.8);
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);   
-    margin-top: 10px;
-    width: 100%;
+.container main .cv {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+  margin-top: 10px;
+  width: 100%;
 }
 
 /*Takimimiz*/
 
-.container .tarihce{
-    background-color: rgba(255, 255, 255,0.8);
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
-    width: auto;
-    height: auto;
-    margin: 10px 20px;
-    padding: 0px 10px;
-    padding-bottom: 25px;
+.container .tarihce {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+  width: auto;
+  height: auto;
+  margin: 10px 20px;
+  padding: 0px 10px;
+  padding-bottom: 25px;
 }
 
-.container .tarihce p{
-    word-spacing: 3px;
+.container .tarihce p {
+  word-spacing: 3px;
 }
 
-.container .tarihce strong{
-    text-align: center;
-    font-size: 25px;
+.container .tarihce strong {
+  text-align: center;
+  font-size: 25px;
 }
 
 /*İletisim*/
 
-.container form{
-    background-color: rgba(255, 255, 255,0.8);
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
-    width: 30;
-    height: auto;
-    margin: 10px 20%;
-    padding: 0px 10px;
-    padding-bottom: 25px;
-    padding-top: 15px;
-    padding-left: 20%;
+.container form {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+  width: 30;
+  height: auto;
+  margin: 10px 20%;
+  padding: 0px 10px;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-left: 20%;
 }
 
-.container #buton{
-    background-color: coral;
-    color: white;
-    font-weight: bold;
-    width: 90px;
-    height: 35px;
-    border-radius: 15px;
+.container #buton {
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  width: 90px;
+  height: 35px;
+  border-radius: 15px;
 }
-.container input+label+select>option{
-    height: 20px;
-}
-
-.container form textarea{
-    padding: 1%;
+.container input + label + select > option {
+  height: 20px;
 }
 
+.container form textarea {
+  padding: 1%;
+}
 
 /*sehrim*/
-.sayfa{
-    width: 500px;
-    margin: 0 auto;
+.sayfa {
+  width: 500px;
+  margin: 0 auto;
 }
-.sliderKonum{
-position: relative;
-width: 500px;
-height: 400px;
-
+.sliderKonum {
+  position: relative;
+  width: 500px;
+  height: 400px;
 }
 
 /*slider*/
 
-.slider{
-    position: relative;
-    width: 500px;
-    height: 320px;
-    margin: 2% 30%;
-    overflow: hidden;
-    border-radius: 15px;
+.slider {
+  position: relative;
+  width: 500px;
+  height: 320px;
+  margin: 2% 30%;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
-.slider-content{
-    position: absolute;
-    width: 500%;
-    left: 0;
-    animation: slide 15s infinite;
+.slider-content {
+  position: absolute;
+  width: 500%;
+  left: 0;
+  animation: slide 15s infinite;
 }
 
-.slider-content:hover{
-    animation-play-state: paused;
+.slider-content:hover {
+  animation-play-state: paused;
 }
 
-.slider-item{
-    width: 20%;
-    float: left;
+.slider-item {
+  width: 20%;
+  float: left;
 }
 
-.slider-item img{
-    width: 500px;
-    height: 320px;
-    
+.slider-item img {
+  width: 500px;
+  height: 320px;
 }
 
-@keyframes slide{
-    0% {
-        transform: translateX(0px);
-    }
-    10% {
-        transform: translateX(-500px);
-    }
-    20% {
-        transform: translateX(-500px);
-    }
-    30% {
-        transform: translateX(-1000px);
-    }
-    40% {
-        transform: translateX(-1000px);
-    }
-    50% {
-        transform: translateX(-1500px);
-    }
-    60% {
-        transform: translateX(-1500px);
-    }
-    70% {
-        transform: translateX(-2000px);
-    }
-    80% {
-        transform: translateX(-2000px);
-    }
-    90% {
-        transform: translateX(0px);
-    }
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-500px);
+  }
+  20% {
+    transform: translateX(-500px);
+  }
+  30% {
+    transform: translateX(-1000px);
+  }
+  40% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(-1500px);
+  }
+  60% {
+    transform: translateX(-1500px);
+  }
+  70% {
+    transform: translateX(-2000px);
+  }
+  80% {
+    transform: translateX(-2000px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
 }
 
-.container .kayserihakkinda{
-    background-color: rgba(255, 255, 255,0.8);
-    box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+.container .kayserihakkinda {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px rgba(4, 50, 104, 0.6);
+}
+
+.countries {
+  /* margin-bottom: 8rem; */
+  display: flex;
+  width: 90%;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.country {
+  background-color: #fff;
+  box-shadow: 0 1rem 2.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  width: 20rem;
+  border-radius: 0.7rem;
+  margin: 0 40rem;
+  /* overflow: hidden; */
+}
+
+/* ilgi alanlarım*/
+.country__img {
+  width: 20rem;
+  height: 8.5rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+}
+
+.country__name {
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.country__region {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.country__row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.country__row span {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.btn-country {
+  border: none;
+  font-size: 2rem;
+  padding: 2rem 5rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  display: block;
+  width: 80rem;
+  margin: 4rem;
+}
+
+.images img.parallel {
+  width: 40rem;
+  margin: 2rem;
+  border: 3rem solid white;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-country{
+  margin: 0 35%;
 }

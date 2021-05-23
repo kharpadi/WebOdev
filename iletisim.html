@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>İletişim</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
@@ -14,9 +14,6 @@
 <body>
     <div class="container">
         <nav>
-            <div class="logo">
-                <a href="index.html">LOGO</a>
-            </div>
            <ul>
                 <li><a href="index.html"  >Hakkımda</a></li>
                 <li><a href="ozgecmis.html" >Özgeçmiş</a></li>
@@ -32,25 +29,27 @@
 
         <form action="" method="post" id="myform">
             <table>
+              
+            
                 <tr>
                     <td><label for="isim">Adınız:</label></td>
-                    <td><input type="text" name="isim" placeholder="Adınız..." required></td>
+                    <td><input class="isim" type="text" name="isim" placeholder="Adınız..." required></td>
                 </tr>
                 <tr>
                     <td><label for="soyisim">Soyadınız:</label></td>
-                    <td><input type="text" name="soyisim" placeholder="Soyadınız..." required></td>
+                    <td><input class="soyisim" type="text" name="soyisim" placeholder="Soyadınız..." required></td>
                 </tr>
                 <tr>
                     <td><label for="email">E-mail adresiniz</label> </td>
-                    <td> <input type="email" name="email" id="" placeholder="nart@examples.com" required></td>
+                    <td> <input class="email" type="email" name="email" id="" placeholder="nart@examples.com" required></td>
                 </tr>
                 <tr>
                     <td><label for="gender">Cinsiyetiniz:</label></td>
-                    <td><input type="radio" name="gender" id="erkek"> Erkek <input type="radio" name="gender" id="kadin"> Kadın</td>
+                    <td><input class="gender" type="radio" name="gender" id="erkek"> Erkek <input type="radio" name="gender" id="kadin"> Kadın</td>
                 </tr>
                 <tr>                  
                     <td><label for="sehir">Şehriniz:</label></td>
-                    <td><select name="sehir" id="" required>
+                    <td><select name="sehir" id="sehir" required>
                         <option value="">Lütfen şehir seçiniz</option>
                         <option value="Kayseri">Kayseri</option>
                         <option value="İstanbul">İstanbul</option>
@@ -61,28 +60,21 @@
                 </tr>
                 <tr>
                     <td><label for="borntime">Doğum Tarihiniz:</label></td>
-                    <td><input type="datetime-local" name="borntime" id="" placeholder="gün/ay/yıl" required></td>
+                    <td><input class="borntime" type="datetime-local" name="borntime" id="" placeholder="gün/ay/yıl" required></td>
                 </tr>
                 <tr>
-                    <td><textarea name="mesaj" id="" cols="30" rows="10" placeholder="Mesajınızı giriniz..." required></textarea></td>
+                    <td><textarea class="mesaj" name="mesaj" id="" cols="30" rows="10" placeholder="Mesajınızı giriniz..." required></textarea></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Gönder" id="buton"></td>
-                    <td><input type="button" value="Temizle" id="buton"></td>
+             
+                  
                 </tr>
             </table>
+            <button class="btn" id="buton">Gönder</button>
+            <button class="btn2" id="buton">Temizle</button>
         </form>
 
-        <script>
-            function control(formId){
-             let invalids= document.getElementById(formId).querySelectorAll(':invalid').length;
-             console.log(invalids);
-                if (invalids !=0) {
-                    alert("Boş alan bırakılamaz")
-                }
-            }
-            control('myform');
-        </script>
-
+      
+    <script src="NartProje.js"></script>
 </body>
 </html>
